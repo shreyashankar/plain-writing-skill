@@ -145,7 +145,7 @@ behaves, at an F1 of about 0.94 to 0.96.
 
 **Example 2. Filler.**
 Before: It is worth noting that the second pass actually removes quite a lot of
-words.
+words, and this matters.
 After: The second pass removes a lot of words.
 
 **Example 3. One cramped sentence split into clear ones.**
