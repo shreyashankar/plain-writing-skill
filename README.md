@@ -1,16 +1,13 @@
 # Plain writing skill
 
-This is a writing-style skill for AI agents. It makes an agent write and edit
-prose in a plain style. The rules cover word choice, punctuation, sentence
-length, and they cut filler. See `SKILL.md` for the full list.
+This skill makes an AI agent write in a plain style. The full rules are in
+`SKILL.md`.
 
-It is packaged as a skill for Claude Code, but the rules in `SKILL.md` are plain
-text and work for any agent that can read a style guide.
+It is packaged for Claude Code, but the rules are plain text and any agent can
+use them.
 
-The skill also does a second pass over its own writing. The second pass removes
-any clause that does not add something the reader needs. When that pass changes
-the text, the skill writes an HTML file that shows what changed, so you can
-check the edits.
+The skill also checks its own writing. It removes anything that does not add
+something, and it writes an HTML file that shows what it changed.
 
 ## What is in here
 
