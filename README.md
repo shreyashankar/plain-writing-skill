@@ -14,8 +14,6 @@ check the edits.
 - `SKILL.md`: the skill, with the rules and the steps.
 - `assets/revision_template.html`: the template for the change view. The skill
   fills it in with the edits it made.
-- `sample_revision.html`: a finished example of the change view, so you can see
-  what it looks like before you run anything.
 
 ## How to install in Claude Code
 
@@ -34,7 +32,6 @@ Or download the files and copy them so the layout looks like this:
 ~/.claude/skills/plain-writing/
   SKILL.md
   assets/revision_template.html
-  sample_revision.html
 ```
 
 Claude Code finds the skill the next time it starts.

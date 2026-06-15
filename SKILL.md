@@ -128,8 +128,7 @@ Tell the user where the file is. The file has three tabs:
 - Diff
 
 In the Diff tab the removed text is red and the rewritten text is green. The
-reason for each change appears when the user hovers the colored text. A finished
-sample is in `sample_revision.html` next to this file.
+reason for each change appears when the user hovers the colored text.
 
 ## Examples
 
@@ -171,8 +170,12 @@ Before: The paper argues that the trend is real, and the result bears emphasis.
 After: The authors argue that the trend is real.
 
 **Example 6. A group of three.**
-Before: The method is simple to set up, cheap to run, and easy to explain.
-After: The method is cheap to run and easy to explain.
+Before: Review time on a big change dropped from a full day to under an hour,
+weekly output went up threefold, and the rate of bugs per change fell.
+After:
+- Review time on a big change dropped from a full day to under an hour.
+- Weekly output went up threefold.
+- The rate of bugs per change fell.
 
 **Example 7. Empty importance words.**
 Before: This result matters, and it carries weight for the design.
