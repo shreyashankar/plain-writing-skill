@@ -144,11 +144,9 @@ caching. For most features, the description agrees with how the feature actually
 behaves, at an F1 of about 0.94 to 0.96.
 
 **Example 2. Filler.**
-Before: GEPA and the agent make different choices, and the difference is useful
-to understand. GEPA looks at a small sample of the data, while the agent can
-look at all of it.
-After: GEPA and the agent make different choices. GEPA looks at a small sample
-of the data, while the agent can look at all of it.
+Before: It is worth noting that the second pass actually removes quite a lot of
+words.
+After: The second pass removes a lot of words.
 
 **Example 3. One cramped sentence split into clear ones.**
 Before: The groups the features were sorted into were the authors' own reading,
@@ -172,10 +170,8 @@ After: The authors argue that the trend is real.
 **Example 6. A group of three.**
 Before: Review time on a big change dropped from a full day to under an hour,
 weekly output went up threefold, and the rate of bugs per change fell.
-After:
-- Review time on a big change dropped from a full day to under an hour.
-- Weekly output went up threefold.
-- The rate of bugs per change fell.
+After: Several measures of productivity improved, e.g., review time on a big
+change dropped from a full day to under an hour.
 
 **Example 7. Empty importance words.**
 Before: This result matters, and it carries weight for the design.

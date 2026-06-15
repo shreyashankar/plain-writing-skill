@@ -1,8 +1,11 @@
 # Plain writing skill
 
-This is a skill for Claude Code. It makes Claude write and edit prose in a plain
-style. The rules cover word choice, punctuation, sentence length, and they cut
-filler. See `SKILL.md` for the full list.
+This is a writing-style skill for AI agents. It makes an agent write and edit
+prose in a plain style. The rules cover word choice, punctuation, sentence
+length, and they cut filler. See `SKILL.md` for the full list.
+
+It is packaged as a skill for Claude Code, but the rules in `SKILL.md` are plain
+text and work for any agent that can read a style guide.
 
 The skill also does a second pass over its own writing. The second pass removes
 any clause that does not add something the reader needs. When that pass changes
@@ -50,3 +53,5 @@ The file has three tabs:
 
 In the Diff tab the removed text is red and the rewritten text is green. The
 reason for each change appears when you hover the colored text.
+
+![The Diff tab, with removed text in red and rewritten text in green](docs/diff-view.png)
