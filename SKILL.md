@@ -118,9 +118,11 @@ Here is the shape of the list:
 ]
 ```
 
-Then take the template at `assets/revision_template.html`, replace the text
-`__DATA__` with this list as JSON, and save the result to a new file in `/tmp`,
-e.g., `/tmp/revision-<short-name>.html`. Do not write it into the skill folder.
+Then take the template at `assets/revision_template.html`, replace the exact
+line `const DATA = __DATA__;` with `const DATA = <json>;`, and save the result
+to a new file in `/tmp`, e.g., `/tmp/revision-<short-name>.html`. Do not write
+it into the skill folder. Check that no `__DATA__` text remains in the saved
+file.
 Tell the user where the file is. The file has three tabs:
 
 - First draft
