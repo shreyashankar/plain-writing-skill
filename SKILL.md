@@ -55,10 +55,10 @@ when you write prose for them.
    long line. Clarity comes before both shortness and length.
 
 8. **Do not make an inanimate thing do an action it cannot do.** An inanimate
-   subject should usually only take "is" or "are", not an action verb. Do not
-   write "logs become searchable records". Give the action an actor, a person or
-   a tool, e.g., "you can search the logs". A few common phrases like "the paper
-   argues" are the exception.
+   subject should usually only take "is" or "are", not an action verb, e.g., do
+   not write "logs become searchable records". Make a person the actor instead,
+   e.g., "you can search the logs". A few common phrases like "the paper argues"
+   are the exception.
 
 9. **Do not invent hyphenated adjectives.** A common compound adjective that
    people already use is fine, e.g., "well-crafted". Avoid a phrase you make up
