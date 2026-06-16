@@ -35,8 +35,8 @@ git clone https://github.com/shreyashankar/plain-writing-skill ~/.claude/skills/
 Then ask the agent to write or revise some text. It applies the rules on its
 own.
 
-When the change is more than tiny, the agent writes an HTML file to `/tmp`. The
-file has three tabs:
+When the agent removes or rewrites something, it writes an HTML file to `/tmp`.
+The file has three tabs:
 
 - First draft
 - Second draft
