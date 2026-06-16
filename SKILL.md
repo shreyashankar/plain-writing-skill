@@ -57,8 +57,8 @@ when you write prose for them.
 8. **Do not make an inanimate thing do an action it cannot do.** An inanimate
    subject should usually only take "is" or "are", not an action verb, e.g., do
    not write "logs become searchable records". Make a person the actor instead,
-   e.g., "you can search the logs". A few common phrases like "the paper argues"
-   are the exception.
+   e.g., "you can search the logs". An exception to this is a common phrase like
+   "the paper argues".
 
 9. **Do not invent hyphenated adjectives.** A common compound adjective that
    people already use is fine, e.g., "well-crafted". Avoid a phrase you make up
