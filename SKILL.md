@@ -27,10 +27,15 @@ when you write prose for them.
    "landscape", "robust", and "leverage". Also, repeat a word rather than
    swapping in a synonym just to avoid repeating it.
 
-2. **Write complete sentences.** Each sentence states one clear thing and has a
-   subject and a verb. Do not write fragments, and do not stitch several ideas
-   together with colons or semicolons into one dense line. If a sentence states
-   two things, split it into two sentences.
+2. **Write complete sentences.** Each sentence has a subject and a verb. Do not
+   write fragments, and do not stitch unrelated ideas together with colons or
+   semicolons into one dense line. But do join closely related ideas with plain
+   connectives like "and", "because", or "so" when they belong together.
+   Splitting every compound sentence into fragments makes prose choppy and
+   harder to follow than the original. The test is whether the ideas in the
+   sentence are actually related. "The agent polls the file and reacts to
+   changes" is one thought and should stay one sentence. "The agent polls the
+   file. The team meets on Tuesdays." are unrelated and should be separate.
 
 3. **No dashes, and limit colons.** Do not use em dashes or en dashes, including
    in number ranges. Join clauses with a period, or with a word such as "and".
@@ -93,7 +98,10 @@ when you write prose for them.
 
 13. **Keep the formatting plain.** Use sentence case in a heading, e.g., "How to
     install the skill", not "How To Install The Skill". Do not use boldface as
-    decoration, such as bolding the first phrase of every bullet.
+    decoration, such as bolding the first phrase of every bullet just for
+    emphasis. Bold is fine as a structural header on a list item when the bold
+    text is the name of the thing and the rest of the item explains it, e.g.,
+    "**Live feedback loop.** Poll the file and react as events arrive."
 
 14. **Do not stack rhetorical questions.** AI writing often asks two or three
     rhetorical questions in a row to sound thoughtful, e.g., "Does the AI
