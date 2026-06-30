@@ -19,6 +19,10 @@
                    font-size: 0.9em; cursor: pointer; color: #444; }
   .toggle button:last-child { border-right: 0; }
   .toggle button.active { background: #2e7d32; color: #fff; }
+  .copy { border: 1px solid #ccc; border-radius: 8px; background: #fff; padding: 0.45em 0.9em;
+          font-size: 0.9em; cursor: pointer; color: #444; }
+  .copy:hover { background: #f0f0f0; }
+  .copy.done { background: #e9f6ec; color: #1e7d32; border-color: #1e7d32; }
   .summary { font-size: 0.88em; color: #666; }
   .legend { font-size: 0.8em; color: #666; display: none; gap: 1.2em; margin: 0.6em 0 0; }
   .legend.show { display: flex; flex-wrap: wrap; }
@@ -47,6 +51,7 @@
     <button id="btn-second" class="active" onclick="setView('second')">Second draft</button>
     <button id="btn-diff" onclick="setView('diff')">Diff</button>
   </span>
+  <button id="copy-second" class="copy" onclick="copySecond()">Copy second draft</button>
   <span class="summary" id="summary"></span>
 </div>
 <div class="legend" id="legend">
@@ -78,6 +83,48 @@ function renderSecond() {
     p.items.map(it => it.type === "keep" ? it.text : it.type === "edit" ? it.new : "")
             .filter(Boolean).join(" ")
   )).join("");
+}
+
+// Second draft as plain text, one paragraph per block joined by blank lines.
+// Mirrors renderSecond's item logic so the copied text matches the rendered view.
+function buildSecondText() {
+  return DATA.map(p =>
+    p.items.map(it => it.type === "keep" ? it.text : it.type === "edit" ? it.new : "")
+            .filter(Boolean).join(" ")
+  ).join("\n\n");
+}
+
+function flashCopied(btn) {
+  btn.textContent = "Copied";
+  btn.classList.add("done");
+  setTimeout(() => { btn.textContent = "Copy second draft"; btn.classList.remove("done"); }, 1500);
+}
+
+// Fallback for when the async Clipboard API is unavailable or rejects (older
+// browsers, file:// pages without focus). Selects a hidden textarea and copies.
+function copyFallback(text) {
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.style.position = "fixed";
+  ta.style.opacity = "0";
+  document.body.appendChild(ta);
+  ta.select();
+  let ok = false;
+  try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+  document.body.removeChild(ta);
+  return ok;
+}
+
+function copySecond() {
+  const btn = document.getElementById("copy-second");
+  const text = buildSecondText();
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text)
+      .then(() => flashCopied(btn))
+      .catch(() => { if (copyFallback(text)) flashCopied(btn); });
+  } else if (copyFallback(text)) {
+    flashCopied(btn);
+  }
 }
 
 function attr(s) { return s.replace(/"/g, "&quot;"); }
