@@ -37,13 +37,16 @@ when you write prose for them.
    changes" is one thought and should stay one sentence. "The agent polls the
    file. The team meets on Tuesdays." are unrelated and should be separate.
 
-3. **No dashes, and limit colons.** Do not use em dashes or en dashes, including
-   in number ranges. Join clauses with a period, or with a word such as "and".
-   Write ranges with the word "to", e.g., "0.94 to 0.96". Use a colon only to
-   introduce a list. Do not use a colon to join clauses or to set up a point,
-   e.g., "Read for the schema: the feature fires". Dashes, and colons used for a
-   point, invite the clever phrasing the user does not want. Use straight quotes,
-   not curly quotes, e.g., "the agent" rather than “the agent”.
+3. **No dashes, no middle dots, and limit colons.** Do not use em dashes or en
+   dashes, including in number ranges. Join clauses with a period, or with a
+   word such as "and". Write ranges with the word "to", e.g., "0.94 to 0.96".
+   Do not use the middle dot (·) as a separator anywhere, e.g., in a title like
+   "Lecture 1 · The Three Gulfs" or between items on one line. Use a comma, the
+   word "and", or separate lines instead. Use a colon only to introduce a list.
+   Do not use a colon to join clauses or to set up a point, e.g., "Read for the
+   schema: the feature fires". Dashes, and colons used for a point, invite the
+   clever phrasing the user does not want. Use straight quotes, not curly
+   quotes, e.g., "the agent" rather than “the agent”.
 
 4. **No jargon.** Do not use shorthand from a field when a plain phrase works.
    If a technical term is truly needed, say it once and explain it in plain
