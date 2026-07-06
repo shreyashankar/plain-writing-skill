@@ -84,7 +84,7 @@ when you write prose for them.
 
 10. **Do not pad with empty emphasis or puffery words.** Words like "really" and
     "real" add emphasis but no information, so drop them. Do not say that
-    something "matters" or "carries weight". Do not puff something up with words
+    something "matters", is "worth" it, or "carries weight". Do not puff something up with words
     like "boasts", "a testament to", "pivotal", or "renowned". State the actual
     point, or cut the sentence.
 
