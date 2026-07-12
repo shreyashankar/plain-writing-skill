@@ -27,21 +27,18 @@ the optional revision file.
 ## Word choice
 
 1. **Use simple, everyday words.** Prefer the common word over the fancy one.
-   Short familiar words are faster to read. Also avoid the words AI tools
+   Short familiar words are faster to read. Also avoid words AI tools
    overuse, e.g., "delve", "tapestry", "landscape", "robust", "leverage", and
    "reach for".
    Before: We leverage the cache to unlock a more robust query experience.
    After: We use the cache to make repeated queries faster.
 
-2. **No jargon.** Do not use shorthand from a field when a plain phrase works.
-   If a technical term is truly needed, say it once and explain it in plain
-   words.
+2. **No jargon.** Always use human-understandable language. Don't invent jargon or shorthand (that is, if a word or phrase is not in the Merriam Webster dictionary, don't use it). Use established technical terms only when they are most precise, and briefly define them when readers may not know them.
    Before: The score is a calibrated proxy for whether the property holds.
-   After: The score is a stand-in for whether the property holds, and we checked
-   that it agrees with hand-labeled cases.
+   After: The score estimates how likely the property is to hold.
 
 3. **No puffery or empty emphasis.** Some words add emphasis but no information,
-   so drop them. The words and phrases to avoid are "really", "real", "matters",
+   so drop them. Avoid the following words: "really", "real", "matters",
    "worth", "carries weight", "boasts", "a testament to", "pivotal", and
    "renowned". State the actual point, or cut the sentence.
    Before: This result matters, and it carries weight for the design.
@@ -82,10 +79,8 @@ the optional revision file.
    hand. Third, when they wanted finer detail, they trained another small model
    and labeled the posts again.
 
-8. **Do not make an inanimate thing do an action it cannot do.** An inanimate
-   subject should usually only take "is" or "are", not an action verb. Make a
-   person the actor instead. A common phrase like "the paper argues" is an
-   exception.
+8. **Do not assign actions to inanimate things.** An inanimate
+   subject should usually only take "is" or "are", not an action verb. Make a person the actor instead. Common phrases such as “the paper argues” are fine.
    Before: The logs become searchable records once the job finishes.
    After: You can search the logs once the job finishes.
 
@@ -170,8 +165,7 @@ the optional revision file.
     After: The model is still opaque, and the wrong citations are only one
     symptom of it.
 
-20. **Keep lists and examples simple.** Do not write a three-part series in a
-    sentence just for rhythm. When you have items to list, use a bullet list.
+20. **Keep lists and examples simple.** Do not write a three-part series of clauses or sentences. When you have items to list, use a bullet list.
     When you use an example to make a point, give one example and introduce it
     with "e.g.". Do not stack several examples for the same point.
     Before: Configuring things is usually messy: random files, infinite pickers,
