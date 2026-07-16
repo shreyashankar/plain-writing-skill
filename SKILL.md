@@ -39,8 +39,8 @@ the optional revision file.
 
 3. **No puffery or empty emphasis.** Some words add emphasis but no information,
    so drop them. Avoid the following words: "really", "real", "matters",
-   "worth", "carries weight", "boasts", "a testament to", "pivotal", and
-   "renowned". State the actual point, or cut the sentence.
+   "worth", "carries weight", "boasts", "a testament to", "pivotal",
+   "renowned", and "quietly". State the actual point, or cut the sentence.
    Before: This result matters, and it carries weight for the design.
    After: The scores barely moved, so we can skip the model on most documents.
 
@@ -209,6 +209,15 @@ the optional revision file.
     After: The gate runs on every merge and blocks any change that fails a
     regression case, so a regression cannot reach production without someone
     deliberately overriding the check.
+
+25. **Be precise and unambiguous.** Every claim says exactly what changes,
+    who does what, or by what mechanism, so a reader cannot take it two
+    ways. Do not use an evocative abstraction where a concrete statement
+    exists, e.g., "improvement stops being guesswork" or "the process gets
+    easier". Name the specific thing that changes.
+    Before: With trusted scores, improvement stops being guesswork.
+    After: With trusted scores, you can measure whether each change helped,
+    so you keep or revert each change based on the measured result.
 
 ## How to revise
 
