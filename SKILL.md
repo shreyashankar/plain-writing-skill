@@ -39,8 +39,8 @@ the optional revision file.
 
 3. **No puffery or empty emphasis.** Some words add emphasis but no information,
    so drop them. Avoid the following words: "really", "real", "matters",
-   "worth", "carries weight", "boasts", "a testament to", "pivotal", and
-   "renowned". State the actual point, or cut the sentence.
+   "worth", "carries weight", "boasts", "a testament to", "pivotal",
+   "renowned", and "quietly". State the actual point, or cut the sentence.
    Before: This result matters, and it carries weight for the design.
    After: The scores barely moved, so we can skip the model on most documents.
 
