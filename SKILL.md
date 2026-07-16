@@ -210,6 +210,15 @@ the optional revision file.
     regression case, so a regression cannot reach production without someone
     deliberately overriding the check.
 
+25. **Be precise and unambiguous.** Every claim says exactly what changes,
+    who does what, or by what mechanism, so a reader cannot take it two
+    ways. Do not use an evocative abstraction where a concrete statement
+    exists, e.g., "improvement stops being guesswork" or "the process gets
+    easier". Name the specific thing that changes.
+    Before: With trusted scores, improvement stops being guesswork.
+    After: With trusted scores, you can measure whether each change helped,
+    so you keep or revert each change based on the measured result.
+
 ## How to revise
 
 Revise in two passes.
