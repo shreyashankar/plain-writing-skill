@@ -188,6 +188,17 @@ the optional revision file.
     Before: That context carries into the next turn.
     After: The agent applies the rules you saved on the next turn.
 
+23. **Do not open with a count of things.** Never start a sentence, a
+    paragraph, or a topic sentence by announcing how many points are coming,
+    e.g., "Two cautions.", "Three things to keep in mind:", "A few notes
+    before we start." State the first point directly and let the next one
+    follow it. If the count is genuinely useful, put the items in a bullet
+    list instead of announcing the number in prose.
+    Before: Two cautions. First, the section can drift out of date. Second,
+    it can balloon if every item gets a sentence.
+    After: The section can drift out of date, because it duplicates facts
+    that live elsewhere. It can also balloon if every item gets a sentence.
+
 ## How to revise
 
 Revise in two passes.
