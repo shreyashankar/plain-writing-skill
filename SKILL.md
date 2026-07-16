@@ -199,6 +199,17 @@ the optional revision file.
     After: The section can drift out of date, because it duplicates facts
     that live elsewhere. It can also balloon if every item gets a sentence.
 
+24. **Prefer long, explanatory sentences over short, punchy ones.** The user
+    writes the way people explain things out loud, in longer sentences with
+    commas and several clauses that carry the reasoning along. A sentence
+    should end because the thought is complete, not because a short sentence
+    would sound stronger. Plain writing here means explanatory, not terse.
+    Before: The gate runs on every merge. It blocks regressions. Nobody
+    bypasses it.
+    After: The gate runs on every merge and blocks any change that fails a
+    regression case, so a regression cannot reach production without someone
+    deliberately overriding the check.
+
 ## How to revise
 
 Revise in two passes.
