@@ -19,12 +19,12 @@ goal is text that anyone can read once and understand. The user has asked for th
 plain style repeatedly and corrects writing that does not follow it, so apply it
 by default when you write prose for them.
 
-The rules are in four groups: word choice, sentences and paragraphs, punctuation
-and formatting, and patterns to avoid. Each rule is followed by a before and
-after so you can see it. After the rules come how to revise, then how to build
-the optional revision file.
+The rules are in four groups: word choice and tone, sentences and paragraphs,
+punctuation and formatting, and patterns to avoid. Each rule is followed by a
+before and after so you can see it. After the rules come how to revise, then how
+to build the optional revision file.
 
-## Word choice
+## Word choice and tone
 
 1. **Use simple, everyday words.** Prefer the common word over the fancy one.
    Short familiar words are faster to read. Also avoid words AI tools
@@ -55,9 +55,26 @@ the optional revision file.
    Before: Do not worry, it is not going to overwrite your file.
    After: Don't worry, it's not going to overwrite your file.
 
+6. **Do not invent hyphenated adjectives.** A common compound adjective that
+   people already use is fine, e.g., "well-crafted". Avoid a phrase you make up
+   by joining words with a hyphen to sound compact or clever. A good test is
+   whether you would find the term in a dictionary or hear it in normal speech.
+   Before: We added a reveal-style colon to the output.
+   After: We added a colon that shows the schema.
+
+7. **Keep the writing boring, descriptive, and explanatory.** Do not use a
+   catchy phrase, slogan, clever label, metaphorical summary, or wording meant
+   to sound memorable. State the actual concept, action, condition, or
+   relationship in literal terms. This rule applies to headings, topic
+   sentences, callouts, labels, summaries, and ordinary prose.
+   Before: Legal requirements as a floor.
+   After: Applicable legal constraints.
+   Before: The alignment loop.
+   After: Iterative refinement using development disagreements.
+
 ## Sentences and paragraphs
 
-6. **Write complete sentences.** Each sentence has a subject and a verb. Do not
+8. **Write complete sentences.** Each sentence has a subject and a verb. Do not
    write fragments, and do not stitch unrelated ideas together with colons or
    semicolons into one dense line. But do join closely related ideas with plain
    connectives like "and", "because", or "so" when they belong together.
@@ -68,7 +85,7 @@ the optional revision file.
    After: The agent polls the file and reacts to changes. The team meets on
    Tuesdays.
 
-7. **Explain things fully and clearly.** Plain does not mean terse. If an idea is
+9. **Explain things fully and clearly.** Plain does not mean terse. If an idea is
    compressed into one cramped sentence, expand it so each point gets its own
    sentence and the reader can follow it.
    Before: The groups the features were sorted into were the authors' own
@@ -79,12 +96,7 @@ the optional revision file.
    hand. Third, when they wanted finer detail, they trained another small model
    and labeled the posts again.
 
-8. **Do not assign actions to inanimate things.** An inanimate
-   subject should usually only take "is" or "are", not an action verb. Make a person the actor instead. Common phrases such as “the paper argues” are fine.
-   Before: The logs become searchable records once the job finishes.
-   After: You can search the logs once the job finishes.
-
-9. **Organize a paragraph as a topic sentence and then support.** Start each
+10. **Organize a paragraph as a topic sentence and then support.** Start each
    paragraph or section with a topic sentence that states the main point. Then
    give the support: a supporting example or fact, with an extra sentence about
    it if it needs one. Introduce more support with a plain connective like "For
@@ -95,9 +107,41 @@ the optional revision file.
    changes, so the server returns early. Moreover, the cache keeps the previous
    output, so a repeated render does no work.
 
+11. **Never write three or more clauses in one sentence, or three or more
+    example sentences in a row.** A sentence may contain one or two related
+    clauses. If it contains three or more clauses, split it into separate
+    sentences. If the clauses form a list, use bullet points. When an example
+    helps, give one example and introduce it with "e.g.". Do not give three or
+    more example sentences back to back to support the same point.
+    Before: The parser reads the file, the validator checks the fields, and the
+    writer saves the record.
+    After: The parser reads the file, and the validator checks the fields. The
+    writer then saves the record.
+
+12. **Prefer long, explanatory sentences over short, punchy ones.** The user
+    writes the way people explain things out loud, in longer sentences with
+    commas and one or two related clauses that carry the reasoning along. A
+    sentence should end because the thought is complete, not because a short
+    sentence would sound stronger. Plain writing here means explanatory, not
+    terse.
+    Before: The gate runs on every merge. It blocks regressions. Nobody
+    bypasses it.
+    After: The gate runs on every merge and blocks changes that fail a
+    regression case. A regression can reach production only when someone
+    deliberately overrides the check.
+
+13. **Be precise and unambiguous.** Every claim says exactly what changes,
+    who does what, or by what mechanism, so a reader cannot take it two
+    ways. Do not use an evocative abstraction where a concrete statement
+    exists, e.g., "improvement stops being guesswork" or "the process gets
+    easier". Name the specific thing that changes.
+    Before: With trusted scores, improvement stops being guesswork.
+    After: With trusted scores, you can measure whether each change helped,
+    so you keep or revert each change based on the measured result.
+
 ## Punctuation and formatting
 
-10. **No dashes or middle dots.** Do not use em dashes or en dashes, including in
+14. **No dashes or middle dots.** Do not use em dashes or en dashes, including in
     number ranges. Join clauses with a period, or with a word such as "and", and
     write ranges with "to". Do not use the middle dot (·) as a separator, e.g.,
     in a title like "Lecture 1 · The Three Gulfs". Use a comma, the word "and",
@@ -105,33 +149,31 @@ the optional revision file.
     Before: The build is fast — it finishes in 10 to 20 seconds.
     After: The build is fast. It finishes in 10 to 20 seconds.
 
-11. **Use a colon only to introduce a list.** Do not use a colon to join clauses
+15. **Use a colon only to introduce a list.** Do not use a colon to join clauses
     or to set up a point. A colon used for a point invites the clever phrasing
     the user does not want.
     Before: Read for the schema: the feature fires.
     After: Read for the schema. The feature fires.
 
-12. **Use straight quotes, not curly quotes.**
+16. **Use straight quotes, not curly quotes.**
     Before: The system logs each “event” as it happens.
     After: The system logs each "event" as it happens.
 
-13. **Do not invent hyphenated adjectives.** A common compound adjective that
-    people already use is fine, e.g., "well-crafted". Avoid a phrase you make up
-    by joining words with a hyphen to sound compact or clever. A good test is
-    whether you would find the term in a dictionary or hear it in normal speech.
-    Before: We added a reveal-style colon to the output.
-    After: We added a colon that shows the schema.
-
-14. **Keep the formatting plain.** Use sentence case in a heading. Do not use
-    boldface as decoration, such as bolding the first phrase of every bullet
-    just for emphasis. Bold is fine as a structural header on a list item when
-    the bold text is the name of the thing and the rest of the item explains it.
+17. **Keep the formatting plain.** Use sentence case in headings, and do not
+    use boldface as decoration. Bold is fine when it names the subject that the
+    rest of a list item explains.
     Before: ## How To Install The Skill
     After: ## How to install the skill
 
 ## Patterns to avoid
 
-15. **No analogies or imagery.** Do not explain something by comparing it to a
+18. **Do not assign actions to inanimate things.** An inanimate subject should
+    usually only take "is" or "are", not an action verb. Make a person the actor
+    instead. Common phrases such as "the paper argues" are fine.
+    Before: The logs become searchable records once the job finishes.
+    After: You can search the logs once the job finishes.
+
+19. **No analogies or imagery.** Do not explain something by comparing it to a
     different thing. Do not use a metaphor or any phrase meant to sound smart.
     Describe the actual thing in literal terms.
     Before: The feature index is like a card catalog that the optimizer can flip
@@ -139,18 +181,18 @@ the optional revision file.
     After: The feature index is a list of named features. The optimizer can look
     up which feature matches a request.
 
-16. **No "not just X, it is Y".** Do not use the negative parallel pattern.
+20. **No "not just X, it is Y".** Do not use the negative parallel pattern.
     State what the thing is.
     Before: It is not just a parser, it is a full toolchain.
     After: It is a parser and a formatter.
 
-17. **No filler.** Cut words and phrases that add nothing, e.g., "it is worth
+21. **No filler.** Cut words and phrases that add nothing, e.g., "it is worth
     noting that". Watch for an "-ing" tail that adds fake analysis. Cut it, or
     say the plain reason.
     Before: The cache stores results, highlighting its value for speed.
     After: The cache stores results, so repeated queries are faster.
 
-18. **Do not stack rhetorical questions.** AI writing often asks two or three
+22. **Do not stack rhetorical questions.** AI writing often asks two or three
     rhetorical questions in a row to sound thoughtful. State the problem directly
     instead of asking the reader to wonder about it.
     Before: Does the tool keep the writer's voice? Does it make the argument
@@ -158,28 +200,20 @@ the optional revision file.
     After: We do not yet know whether the tool keeps the writer's voice, or
     whether it makes the argument stronger or weaker.
 
-19. **Do not use the dramatic pivot.** Do not set up a statement and then
+23. **Do not use the dramatic pivot.** Do not set up a statement and then
     undercut it in the next sentence. State the full point in one go.
     Before: The model is still opaque. Users notice the wrong citations, but
     those are only one symptom.
     After: The model is still opaque, and the wrong citations are only one
     symptom of it.
 
-20. **Keep lists and examples simple.** Do not write a three-part series of clauses or sentences. When you have items to list, use a bullet list.
-    When you use an example to make a point, give one example and introduce it
-    with "e.g.". Do not stack several examples for the same point.
-    Before: Configuring things is usually messy: random files, infinite pickers,
-    and knobs you didn't even know existed.
-    After: Configuring things is usually messy, e.g., the settings are scattered
-    across many files.
-
-21. **Do not attribute a claim to no one.** Do not hide a claim behind a vague
+24. **Do not attribute a claim to no one.** Do not hide a claim behind a vague
     source, e.g., "experts say" or "studies show". Name the source, or cut the
     claim.
     Before: Experts say this approach scales well.
     After: In our benchmark, the parser handled a million rows.
 
-22. **Do not use vague demonstrative pronouns or vague summary nouns.** Do not
+25. **Do not use vague demonstrative pronouns or vague summary nouns.** Do not
     use "This", "That", "These", or "Those" to point at a whole idea instead of
     a named thing, and do not gesture at a prior idea with a bare noun like "the
     result", "the outcome", or "the point". Name the thing you mean. Never open
@@ -188,7 +222,7 @@ the optional revision file.
     Before: That context carries into the next turn.
     After: The agent applies the rules you saved on the next turn.
 
-23. **Do not open with a count of things.** Never start a sentence, a
+26. **Do not open with a count of things.** Never start a sentence, a
     paragraph, or a topic sentence by announcing how many points are coming,
     e.g., "Two cautions.", "Three things to keep in mind:", "A few notes
     before we start." State the first point directly and let the next one
@@ -198,26 +232,6 @@ the optional revision file.
     it can balloon if every item gets a sentence.
     After: The section can drift out of date, because it duplicates facts
     that live elsewhere. It can also balloon if every item gets a sentence.
-
-24. **Prefer long, explanatory sentences over short, punchy ones.** The user
-    writes the way people explain things out loud, in longer sentences with
-    commas and several clauses that carry the reasoning along. A sentence
-    should end because the thought is complete, not because a short sentence
-    would sound stronger. Plain writing here means explanatory, not terse.
-    Before: The gate runs on every merge. It blocks regressions. Nobody
-    bypasses it.
-    After: The gate runs on every merge and blocks any change that fails a
-    regression case, so a regression cannot reach production without someone
-    deliberately overriding the check.
-
-25. **Be precise and unambiguous.** Every claim says exactly what changes,
-    who does what, or by what mechanism, so a reader cannot take it two
-    ways. Do not use an evocative abstraction where a concrete statement
-    exists, e.g., "improvement stops being guesswork" or "the process gets
-    easier". Name the specific thing that changes.
-    Before: With trusted scores, improvement stops being guesswork.
-    After: With trusted scores, you can measure whether each change helped,
-    so you keep or revert each change based on the measured result.
 
 ## How to revise
 
